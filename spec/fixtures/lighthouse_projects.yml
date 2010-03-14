@@ -1,0 +1,22 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  lighthouse_id: 1
+
+two:
+  name: MyString
+  lighthouse_id: 1
+
+# == Schema Information
+#
+# Table name: lighthouse_projects
+#
+#  id                    :integer         not null, primary key
+#  name                  :string(255)
+#  lighthouse_id         :integer
+#  lighthouse_account_id :integer
+#  created_at            :datetime
+#  updated_at            :datetime
+#
+

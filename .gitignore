@@ -1,0 +1,6 @@
+*.tmproj
+tmp
+log
+doc
+*.sqlite3
+config/credentials.rb

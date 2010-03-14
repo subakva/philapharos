@@ -1,0 +1,19 @@
+<p><strong>Project:</strong> <%= @lighthouse_account.account_name %></p>
+<p>
+  <strong>Choose:</strong>
+  <% if !@projects.blank? %>
+    <select name="lighthouse_project_id" id="project_chooser">
+      <option value="0">----</option>
+    <% for project in @projects %>
+      <option value="<%= project.id %>"><%= project.name %></option>
+    <% end %>
+    </select>
+  <% else %>
+    I couldn't find any projects on that account.
+  <% end %>
+
+  <%= submit_tag "Draw!", :id => "draw_pie", :name => "draw_pie" %>
+</p>
+
+<h3>Lookee Here</h3>
+<div id='pie_hole'></div>

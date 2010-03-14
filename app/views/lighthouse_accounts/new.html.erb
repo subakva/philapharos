@@ -1,0 +1,13 @@
+<% form_for @lighthouse_account do |f| -%>
+  <p>
+    <%= f.label :account_name, "Account Name" %>
+    <%= f.text_field :account_name %>
+  </p>
+  <p>
+    <%= f.label :token, "Token" %>
+    <%= f.text_field :token %>
+  </p>
+  <p>
+    <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+  </p>
+<% end -%>

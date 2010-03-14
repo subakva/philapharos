@@ -1,0 +1,7 @@
+== Philaphilos
+
+This is a rails application for visualizing ticket history in lighthouse. Currently, it will accept an account name and a token, and it will show a chart of ticket count by milestone within a project.
+
+== To Do
+
+Pretty much everything.
